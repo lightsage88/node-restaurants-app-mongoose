@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: YkS8ToQChFRFyD+mwMC7tTezHHpZvG7dN2nzFyad1PSCeh0oWxGO2CVFfdrr/hnNVW+Y3jG0G2XUlxorlhQXZm6al+Vjc+UDtsi+nu+ss6Kfk31NOTdrsMGzXSNpFPNYYKqLMwgyR/ox37P0ZDp5ZASLpxvfvegzNQ7q6ZzpBfvkLQJi4GHohuGmcWWniQdphTdVsLx4W/Dx+warb9+BlMcJzDTX5SI0RDOkcHmvJEiXyDCWoVHeTp0c6iFvUW9fNMISZZWF4m7RHji+mDRCDemzXdOCBfOjNF8zHvIbH/O86S/rpZ1cLxFDCBW8BFJOYtVNAx0izfpOHZvvOtTA8Mbs9H4WoN8ENBTV603Vw8KMn18yFTqHlPolVjp7PA82QAt2pKnWQbt9LV8NVEjRGk9ZKV/wK67rHCWeU/xrOHqz6B047PlW4PyZsrFN1V4Ow5PdMzb8p+oND9XL34KjaktCIHeKqEALBiEFI7zE6A2q9HXzaJFl8w8MoCrH8XgSqJHngOHCNdj00BsquINorfpZoJJ9M+EhcDJH1BIod5ktJhrQoUxm1zM+6OozVJ5MH4V2b6osE9DZcLzMSHNPmSfm73/N/cQzsHLGoDgDnEcuCeJg2pC04JpPWpMG4KiV4KXTokgTMDOG6TN4C6i1/CDfFHs3o0mdmZZYeoDVefU=
+  app: stormy-taiga-91901
+  on:
+    repo: lightsage88/node-restaurants-app-mongoose
+    branch: feature/with-tests
